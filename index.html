@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>My To-Do List</title>
   </head>
   <body class="center-screen">
     <!-- Tela de login -->
 
-    <div id="login-container" class="center-screen display-grid">
+    <div id="login-container" class="center-screen display-none">
       <div id="logo" class="flex justify-center">
         <h1 id="logo-text" class="color-white">My TO-DO List</h1>
       </div>
@@ -30,92 +30,11 @@
         <div id="header" class="flex align-center">
           <div class="container-content flex align-center">
             <h2 class="color-white">Olá <span class="color-white">Usuário</span></h2>
-            <button id="sair" class="bg-pink color-white">sair</button>
+            <button id="sair" class="bg-pink color-white">Sair</button>
           </div>
         </div>
-        <div id="task-container">
-          
-          <div class="task">
-            <div class="task-item flex bg-white border-radius">
-              <div class="task-content-container flex align-center">
-                <p id="task-content">Tarefa</p>
-              </div>
-              <div class="task-delete flex justify-center align-center bg-pink">
-                <img src="./assets/icons8-lixo-128.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-
-          <div class="task">
-            <div class="task-item flex bg-white border-radius">
-              <div class="task-content-container flex align-center">
-                <p id="task-content">Tarefa</p>
-              </div>
-              <div class="task-delete flex justify-center align-center bg-pink">
-                <img src="./assets/icons8-lixo-128.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="task">
-            <div class="task-item flex bg-white border-radius">
-              <div class="task-content-container flex align-center">
-                <p id="task-content">Tarefa</p>
-              </div>
-              <div class="task-delete flex justify-center align-center bg-pink">
-                <img src="./assets/icons8-lixo-128.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="task">
-            <div class="task-item flex bg-white border-radius">
-              <div class="task-content-container flex align-center">
-                <p id="task-content">Tarefa</p>
-              </div>
-              <div class="task-delete flex justify-center align-center bg-pink">
-                <img src="./assets/icons8-lixo-128.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="task">
-            <div class="task-item flex bg-white border-radius">
-              <div class="task-content-container flex align-center">
-                <p id="task-content">Tarefa</p>
-              </div>
-              <div class="task-delete flex justify-center align-center bg-pink">
-                <img src="./assets/icons8-lixo-128.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="task">
-            <div class="task-item flex bg-white border-radius">
-              <div class="task-content-container flex align-center">
-                <p id="task-content">Tarefa</p>
-              </div>
-              <div class="task-delete flex justify-center align-center bg-pink">
-                <img src="./assets/icons8-lixo-128.svg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="task">
-            <div class="task-item flex bg-white border-radius">
-              <div class="task-content-container flex align-center">
-                <p id="task-content">Tarefa</p>
-              </div>
-              <div class="task-delete flex justify-center align-center bg-pink">
-                <img src="./assets/icons8-lixo-128.svg" alt="">
-              </div>
-            </div>
-          </div>
-
+        <div id="task-container">      
          
-
-          
         </div>
         <div id="footer" class="flex align-center bg-white">
           <div class="container-content">
@@ -127,8 +46,14 @@
     </div>
     <!-- To-do list -->
 
-    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
     
+    <script src="./logic/firebase.js"></script>
     <script src="./logic/app.js"></script>
+    <script src="./logic/auth.js"></script>
+    <script src="./logic/to-do.js"></script>
+
   </body>
 </html>
